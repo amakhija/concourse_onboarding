@@ -10,6 +10,6 @@ resources:
 - name: source-code
   type: git
   source:
-    uri: https://github.com/amakhija/concourse_onboarding.git
+    uri: https://github.com/pivotal-cf/pivotal-ui.git
     branch: master
     skip_ssl_verification: true
