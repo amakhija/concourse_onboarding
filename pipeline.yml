@@ -3,7 +3,6 @@ jobs:
   plan:
   - get: source-code
     trigger: true
-  - get: onboarding-image
   - task: hello
     file: source-code/tasks/hello.yml
 
@@ -14,8 +13,3 @@ resources:
     uri: https://github.com/amakhija/concourse_onboarding.git
     branch: master
     skip_ssl_verification: true
-
-- name: onboarding-image
-  type: docker-image
-  source:
-    repository: amakhija/onboarding-pivotal
