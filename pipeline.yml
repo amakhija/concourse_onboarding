@@ -18,4 +18,4 @@ resources:
 - name: onboarding-image
   type: docker-image
   source:
-    repository: amakhija/onboarding-pivotal
+    repository: amakhija/onboarding-pivotal:realdeal
