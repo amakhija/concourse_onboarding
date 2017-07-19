@@ -12,4 +12,4 @@ resources:
   source:
     uri: https://github.com/amakhija/concourse_onboarding.git
     branch: master
-
+    skip_ssl_verification: true
