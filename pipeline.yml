@@ -2,6 +2,7 @@ jobs:
 - name: first-job
   plan:
   - get: source-code
+    trigger: true
   - task: hello
     file: source-code/tasks/hello.yml
 
