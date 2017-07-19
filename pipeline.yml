@@ -3,13 +3,13 @@ jobs:
   plan:
   - get: source-code
     trigger: true
-#  - task: hello
-#    file: source-code/tasks/hello.yml
+  - task: hello
+    file: source-code/tasks/hello.yml
 
 resources:
 - name: source-code
   type: git
   source:
-    uri: https://github.com/pivotal-cf/pivotal-ui.git
+    uri: https://github.com/amakhija/concourse_onboarding.git
     branch: master
     skip_ssl_verification: true
