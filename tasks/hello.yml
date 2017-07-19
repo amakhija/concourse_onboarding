@@ -6,7 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 inputs:
-- name: source-code
+  - name: source-code
 
 run:
   path: source-code/tasks/hello.sh
