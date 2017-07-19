@@ -1,0 +1,14 @@
+jobs:
+- name: first-job
+  plan:
+  - get: source-code
+  - task: hello
+    file: source-code/tasks/hello.yml
+
+resources:
+- name: source-code
+  type: git
+  source:
+    uri: https://github.com/amakhija/concourse_onboarding.git
+    branch: master
+
